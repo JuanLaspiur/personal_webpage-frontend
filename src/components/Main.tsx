@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Button from "./buttons/Button";
 export default function Main() {
     return (
       <main className="text-center max-w-2xl mt-16">
@@ -17,11 +18,16 @@ export default function Main() {
           <input
             type="email"
             placeholder="Your work email"
-            className="p-3 rounded-lg bg-gray-800 text-white outline-none w-64"
+            className="p-3 rounded-lg bg-gray-800 text-white outline-none lg:w-64"
           />
-          <button className="bg-[#244256] px-6 py-3 rounded-lg text-white hover:bg-[#315A75]">
-            Start for free
-          </button>
+
+                 <Button
+                 text="Start for free"
+                 originalColor="#244256"
+                 hoverColor="#315A75"
+                 textColor="#fff"
+                 hoverTextColor="#fff"
+               />
         </div>
   
         <p className="text-gray-500 mt-4">

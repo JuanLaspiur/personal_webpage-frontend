@@ -9,7 +9,7 @@ export default function Footer() {
            <h1 className="text-lg font-semibold">Juan Laspiur</h1>
          </div>
 
-       <div className="w-[100%] flex flex-row gap-4">
+       <div className="w-[100%] flex flex-col lg:flex-row gap-3 lg:gap-4">
           <div className="w-[100%] ">
     
             <p className="text-gray-400">

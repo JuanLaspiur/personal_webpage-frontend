@@ -3,10 +3,10 @@ import { FaReact, FaNodeJs, FaDatabase } from 'react-icons/fa';
 
 export default function AboutMeSection() {
   return (
-    <section className="w-full flex flex-col items-center mt-16 py-10 text-white bg-gradient-to-b from-[#121212] to-[#1E1E1E]">
+    <section className="w-full flex flex-col items-center mt-16 py-10 text-white ">
       <h2 className="text-3xl font-bold mb-6 tracking-wide">About Me</h2>
       
-      <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-10 shadow-2xl max-w-4xl w-full flex flex-col items-center text-center border border-white/20">
+      <div className="backdrop-blur-lg rounded-2xl p-10 shadow-2xl max-w-4xl w-full flex flex-col items-center text-center">
         
         {/* Imagen con efecto de neón */}
         <div className="relative w-48 h-48">
@@ -15,13 +15,13 @@ export default function AboutMeSection() {
             alt="Andrés Felipe Ramírez Galeano" 
             layout="fill"
             objectFit="cover"
-            className="rounded-full border-4 border-cyan-400 shadow-lg transition-transform duration-300 hover:scale-105"
+            className="rounded-full shadow-lg transition-transform duration-300 hover:scale-105"
           />
         </div>
         
         {/* Descripción */}
         <p className="mt-6 text-lg max-w-lg leading-relaxed text-gray-300">
-          Hi, I'm <span className="font-semibold text-cyan-400">Juan Laspiur</span>, a passionate software developer specializing in front-end and back-end technologies. I love building high-performance applications using modern tools like React, React Native, and Node.js.
+          Hi, I'm <span className="font-semibold text-cyan-300">Juan Laspiur</span>, a passionate software developer specializing in front-end and back-end technologies. I love building high-performance applications using modern tools like React, React Native, and Node.js.
         </p>
 
         {/* Tech Stack con animaciones */}

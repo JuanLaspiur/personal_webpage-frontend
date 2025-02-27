@@ -3,7 +3,7 @@ import { FaInstagram, FaLinkedin, FaGithub, FaYoutube } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 w-fulltext-white px-[100px] pt-2">
+    <footer className="bg-gray-900 w-fulltext-white px-[100px] py-4">
      <div className="flex items-center gap-2">
            <Image src="/logo_sin-fondo.png" alt="Juan Laspiur Logo" width={70} height={70} />
            <h1 className="text-lg font-semibold">Juan Laspiur</h1>

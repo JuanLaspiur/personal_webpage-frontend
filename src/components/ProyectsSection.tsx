@@ -4,8 +4,8 @@ export default function Section() {
   return (
     <section className="w-full flex flex-col items-center mt-16 py-6">
       <h2 className="text-3xl font-bold text-white">Uptime Monitoring</h2>
-      <div className="mt-6 bg-[#1E1E1E] rounded-2xl p-6 shadow-lg max-w-4xl w-full mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
+      <div className="mt-6 rounded-2xl py-6 shadow-lg w-full mx-auto">
+        <div className="flex flex-wrap justify-center gap-4 w-full mx-auto">
           <Card
             title="Error 502"
             description="Bad gateway"

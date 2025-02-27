@@ -1,7 +1,7 @@
 import Main from "@/components/Main";
 import Section from "@/components/ProyectsSection";
 import AboutMeSection from "@/components/AboutMeSection"
-import Footer from "@/components/Footer";
+import TechnologiesSection from "@/components/TecnologiesSection";
 
 export default function Home() {
   return (
@@ -11,8 +11,9 @@ export default function Home() {
         <Main />
         <Section />
         <AboutMeSection />
+        <TechnologiesSection />
       </div>
-      <Footer />
+    
     </>
   );
 }

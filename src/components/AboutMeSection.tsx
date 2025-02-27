@@ -1,10 +1,11 @@
 import Image from 'next/image';
 import { FaReact, FaNodeJs, FaDatabase } from 'react-icons/fa';
+import SectionTiles from './titles/SectionTiles';
 
 export default function AboutMeSection() {
   return (
     <section className="w-full flex flex-col items-center mt-16 py-10 text-white ">
-      <h2 className="text-3xl font-bold mb-6 tracking-wide">About Me</h2>
+      <SectionTiles text='About Me' imageSrc='/logo_sin-fondo.png'/>
       
       <div className="backdrop-blur-lg rounded-2xl p-10 shadow-2xl max-w-4xl w-full flex flex-col items-center text-center">
         

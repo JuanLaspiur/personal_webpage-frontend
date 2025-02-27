@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { FaNodeJs, FaReact, FaDatabase, FaLinux, FaGitAlt, FaAws } from "react-icons/fa";
+import SectionTiles from "./titles/SectionTiles";
 
 const skills = [
   { category: "Backend & APIs", items: ["Node.js", "Typescript", "Google APIs"], icon: FaNodeJs },
@@ -17,10 +18,8 @@ const extras = [
 function TechnologiesSection() {
   return (
     <section className="w-full max-w-5xl mx-auto my-16 p-10 bg-[#244256] text-white rounded-3xl relative">
-         <Image src="/logo_fondo-blanco.png" alt="Juan Laspiur Logo" width={70} height={70} className="absolute top-5 rounded-2xl"/>
-      <h2 className="text-4xl font-bold mb-8 text-center text-cyan-300 tracking-wide"> Technologies</h2>
-      
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <SectionTiles color='text-cyan-300' text='Technologies' imageSrc='/logo_fondo-blanco.png'/>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-3 pt-4 gap-6">
         {skills.map(({ category, items, icon: Icon }, index) => (
           <div 
             key={index} 

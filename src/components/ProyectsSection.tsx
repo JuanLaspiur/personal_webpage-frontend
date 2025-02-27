@@ -1,9 +1,10 @@
 import { Card } from "./cards/Card";
+import SectionTiles from "./titles/SectionTiles";
 
 export default function Section() {
   return (
     <section className="w-full flex flex-col items-center mt-16 py-6">
-      <h2 className="text-3xl font-bold text-white">Uptime Monitoring</h2>
+      <SectionTiles text='Uptime Monitoring' imageSrc='/logo_sin-fondo.png' />
       <div className="mt-6 rounded-2xl py-6 shadow-lg w-full mx-auto">
         <div className="flex flex-wrap justify-center gap-4 w-full mx-auto">
           <Card

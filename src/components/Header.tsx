@@ -1,10 +1,11 @@
 "use client";
 import Image from "next/image";
-import Button from "./buttons/Button"; // Importamos el componente Button
+import Link from "next/link";
+import Button from "./buttons/Button";
 
 export default function Header() {
   const handleSignUp = () => {
-    console.log('Sign Up clicked');
+    console.log("Sign Up clicked");
   };
 
   return (
@@ -14,10 +15,18 @@ export default function Header() {
         <h1 className="text-lg font-semibold">Juan Laspiur</h1>
       </div>
       <nav className="hidden md:flex gap-6">
-        <a href="#" className="text-gray-400 hover:text-white">Platform</a>
-        <a href="#" className="text-gray-400 hover:text-white">Documentation</a>
-        <a href="#" className="text-gray-400 hover:text-white">Pricing</a>
-        <a href="#" className="text-gray-400 hover:text-white">Community</a>
+        <Link href="/" className="text-gray-400 hover:text-white">
+          Platform
+        </Link>
+        <Link href="/documentos" className="text-gray-400 hover:text-white">
+          Documentation
+        </Link>
+        <Link href="#" className="text-gray-400 hover:text-white">
+          Pricing
+        </Link>
+        <Link href="#" className="text-gray-400 hover:text-white">
+          Community
+        </Link>
       </nav>
       <Button
         text="Sign Up"
@@ -30,3 +39,4 @@ export default function Header() {
     </header>
   );
 }
+

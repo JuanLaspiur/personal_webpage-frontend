@@ -2,7 +2,7 @@ import React from 'react'
 
 function Sidebar() {
   return (
-    <aside className="w-64 bg-gray-800 text-white p-4">
+    <aside className="w-64 bg-gray-800 text-white p-4 relative z-[99]">
     <h2 className="text-xl font-bold mb-6">Sidebar</h2>
     <nav>
       <ul>

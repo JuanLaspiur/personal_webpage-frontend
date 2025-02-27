@@ -3,7 +3,7 @@ import React from 'react'
 
 function OficialDocs() {
   return (
-    <div className="min-h-screen w-full flex flex-col items-center justify-center bg-black text-white absolute left-0 z-[-1]">
+    <div className="min-h-screen w-full flex flex-col items-center justify-center bg-black text-white absolute left-0 ">
       <div className="text-center max-w-2xl my-10">
         <div className="flex items-center justify-center gap-2">
           <Image

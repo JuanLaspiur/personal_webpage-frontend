@@ -20,7 +20,7 @@ export default function Main() {
             placeholder="Your work email"
             className="p-3 rounded-lg bg-gray-800 text-white outline-none lg:w-64"
           />
-
+{/* sí este boton este btn es use client, puedo hacer este componente padre, Main client server */}
                  <Button
                  text="Start for free"
                  originalColor="#244256"

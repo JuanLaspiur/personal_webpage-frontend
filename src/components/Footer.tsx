@@ -3,13 +3,13 @@ import { FaInstagram, FaLinkedin, FaGithub, FaYoutube } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 w-fulltext-white px-[100px] py-4">
+    <footer className="bg-gray-900 w-fulltext-white px-[100px] py-2">
      <div className="flex items-center gap-2">
            <Image src="/logo_sin-fondo.png" alt="Juan Laspiur Logo" width={70} height={70} />
            <h1 className="text-lg font-semibold">Juan Laspiur</h1>
          </div>
 
-       <div className="w-[100%] flex flex-col lg:flex-row gap-3 lg:gap-4">
+       <div className="w-[100%] bg-red flex flex-col lg:flex-row justify-between mx-auto">
           <div className="w-[100%] ">
     
             <p className="text-gray-400">
@@ -18,12 +18,12 @@ export default function Footer() {
           </div>
           {/* contacto */}
           <div className="w-[100%] " >
-          <p className="text-gray-400 px-4">+1 (201) 500-2007</p>
+          <p className="text-gray-400 md:mx-6">+1 (201) 500-2007</p>
         </div>
         <div>
-        <p className="text-gray-400  px-4">hello@betterstack.com</p>
+        <p className="text-gray-400 ">hello@betterstack.com</p>
         </div>
-        <div className="w-[100%] flex flex-row gap-4 ">
+        <div className="w-[100%] flex flex-row gap-4 justify-end">
   <FaInstagram className="text-gray-400 hover:text-white text-xl cursor-pointer" />
   <FaLinkedin className="text-gray-400 hover:text-white text-xl cursor-pointer" />
   <FaGithub className="text-gray-400 hover:text-white text-xl cursor-pointer" />

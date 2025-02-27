@@ -1,4 +1,4 @@
-import Image from "next/image";
+"use server"
 import React from "react";
 import { FaNodeJs, FaReact, FaDatabase, FaLinux, FaGitAlt, FaAws } from "react-icons/fa";
 import SectionTiles from "./titles/SectionTiles";

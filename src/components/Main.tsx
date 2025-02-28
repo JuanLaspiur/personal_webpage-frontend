@@ -1,24 +1,12 @@
-import Image from "next/image";
 import { FaRocket } from "react-icons/fa";
 import Button from "./buttons/Button";
+import MainTitles from "./titles/MainTitles";
 
 export default function Main() {
   return (
     <main className="text-center max-w-2xl mt-10">
-      <div className="flex items-center justify-center gap-2">
-        <Image src="/logo_sin-fondo.png" alt="Juan Laspiur Logo" width={110} height={110} />
-      </div>
-      
-      <span className="bg-gradient-to-r from-[#173F3F] to-[#fff] bg-clip-text text-transparent text-4xl md:text-6xl font-bold leading-tight">
-        Radically better 
-      </span>
-      <span className="text-[#244256] text-4xl md:text-6xl font-bold leading-tight">
-        observability stack
-      </span>
-
-      <p className="text-gray-400 mt-4">
-        Ship higher-quality software faster. Be the hero of your engineering teams.
-      </p>
+      <MainTitles topText="Radically better" bottomText="observability stack" />
+    
 
       <div className="mt-6 flex flex-col md:flex-row gap-2 justify-center">
         <input

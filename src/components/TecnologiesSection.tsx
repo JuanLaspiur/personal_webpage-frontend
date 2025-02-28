@@ -42,7 +42,6 @@ function TechnologiesSection() {
           </div>
         ))}
 
-        {/* Contenedor para Extras */}
         {extras.map(({ category, items, icon: Icon }, index) => (
           <div 
             key={index} 
@@ -50,7 +49,6 @@ function TechnologiesSection() {
               transition-all duration-300 transform scale-100 hover:scale-105 
               hover:border-yellow-300/40"
           >
-            {/* Efecto de brillo sutil */}
             <div className="absolute inset-0 bg-gradient-to-br from-yellow-200/10 to-transparent rounded-2xl opacity-20 blur-xl"></div>
 
             <div className="flex items-center gap-3 mb-4 relative z-10">

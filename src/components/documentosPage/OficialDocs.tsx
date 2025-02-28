@@ -1,28 +1,11 @@
-import Image from 'next/image'
 import React from 'react'
+import MainTitles from '../titles/MainTitles';
 
 function OficialDocs() {
   return (
     <div className="min-h-screen w-full flex flex-col items-center justify-center bg-black text-white absolute left-0 ">
       <div className="text-center max-w-2xl my-10">
-        <div className="flex items-center justify-center gap-2">
-          <Image
-            src="/logo_sin-fondo.png"
-            alt="Juan Laspiur Logo"
-            width={110}
-            height={110}
-          />
-        </div>
-        <span className="bg-gradient-to-r from-[#173F3F] to-[#fff] bg-clip-text text-transparent text-4xl md:text-6xl font-bold leading-tight">
-          Documents
-        </span>
-        <br />
-        <span className="text-[#244256] text-4xl md:text-6xl font-bold leading-tight">
-          observability stack
-        </span>
-        <p className="text-gray-400 mt-4">
-          Ship higher-quality software faster. Be the hero of your engineering teams.
-        </p>
+        <MainTitles topText="Documents" bottomText="observability stack" />
 
         <div className="mt-8 text-left text-gray-400">
           <h2 className="text-xl font-bold text-white">📌 Official Documentation</h2>

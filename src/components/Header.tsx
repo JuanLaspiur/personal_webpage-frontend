@@ -9,7 +9,7 @@ export default function Header() {
   };
 
   return (
-    <header className="w-full flex justify-between items-center px-8 py-4">
+    <header className="w-full flex justify-between items-center px-8 py-4  relative z-[99]">
       <div className="flex items-center gap-2">
         <Image src="/logo_sin-fondo.png" alt="Juan Laspiur Logo" width={70} height={70} />
         <h1 className="text-lg font-semibold">Juan Laspiur</h1>

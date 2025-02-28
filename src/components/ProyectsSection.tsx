@@ -53,7 +53,7 @@ const projects = [
 
 export default function Section({ projectsData = projects }) {
   return (
-    <section className="w-full flex flex-col items-center mt-16 py-6 relative">
+    <section className="w-full flex flex-col items-center mt-20 py-6 pt-12 relative">
       <SectionTiles text="Uptime Monitoring" imageSrc="/iconos/espada.png" />
       <div className="mt-6 rounded-2xl py-6 shadow-lg w-full mx-auto">
         <div className="flex flex-wrap justify-center gap-4 w-full mx-auto">
@@ -63,7 +63,6 @@ export default function Section({ projectsData = projects }) {
         </div>
       </div>
 
-      {/* Aquí se importa y usa el componente ScrollToTopButton */}
       <ScrollToTopButton />
     </section>
   );

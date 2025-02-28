@@ -1,5 +1,6 @@
 import { Card } from "./cards/Card";
 import SectionTiles from "./titles/SectionTiles";
+import { FaUsers, FaGlobe, FaListAlt, FaPenFancy, FaNetworkWired } from "react-icons/fa";
 
 const projects = [
   {
@@ -9,6 +10,7 @@ const projects = [
     imageAlt: "Cooperativa Cultural",
     footerText: "Cooperativa Cultural",
     videoSrc: "./proyects/proyecto.mp4",
+    icon: <FaUsers className="text-white text-2xl" />, 
   },
   {
     title: "Spartus Web Page",
@@ -17,6 +19,7 @@ const projects = [
     imageAlt: "Spartus Web Page",
     footerText: "Spartus Web Page",
     videoSrc: "./proyects/spartus.mp4",
+    icon: <FaGlobe className="text-white text-2xl" />,
   },
   {
     title: "Tag List",
@@ -25,6 +28,7 @@ const projects = [
     imageAlt: "Tag List",
     footerText: "Tag List",
     videoSrc: "./proyects/tag_list.mp4",
+    icon: <FaListAlt className="text-white text-2xl" />, 
   },
   {
     title: "Blog María",
@@ -33,6 +37,7 @@ const projects = [
     imageAlt: "Blog María",
     footerText: "Blog María",
     videoSrc: "./proyects/Blog_maria.mp4",
+    icon: <FaPenFancy className="text-white text-2xl" />, 
   },
   {
     title: "Red Social",
@@ -40,17 +45,18 @@ const projects = [
     imageSrc: "/logo_sin-fondo.png",
     imageAlt: "Red Social",
     footerText: "Red Social",
-    videoSrc: "./proyects/Red_social.mp4",
+    videoSrc: "./proyects/red_social.mp4",
+    icon: <FaNetworkWired className="text-white text-2xl" />, 
   },
 ];
 
-export default function Section() {
+export default function Section({ projectsData = projects }) {
   return (
     <section className="w-full flex flex-col items-center mt-16 py-6">
       <SectionTiles text="Uptime Monitoring" imageSrc="/iconos/espada.png" />
       <div className="mt-6 rounded-2xl py-6 shadow-lg w-full mx-auto">
         <div className="flex flex-wrap justify-center gap-4 w-full mx-auto">
-          {projects.map((project, index) => (
+          {projectsData.map((project, index) => (
             <Card key={index} {...project} />
           ))}
         </div>

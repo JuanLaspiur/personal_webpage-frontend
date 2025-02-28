@@ -8,15 +8,14 @@ interface CardProps {
   imageAlt: string;
   footerText: string;
   videoSrc?: string;
+  icon?: JSX.Element;
 }
 
-export function Card({ title, description, imageSrc, imageAlt, footerText, videoSrc='/proyecto.mp4' }: CardProps) {
+export function Card({ title, description, imageSrc, imageAlt, footerText, videoSrc = '/proyecto.mp4', icon }: CardProps) {
   return (
     <div className="relative bg-black/30 backdrop-blur-xl min-h-[300px] w-[230px] p-6 rounded-2xl border border-white/20 
       max-w-[250px] sm:max-w-xs md:max-w-md text-center flex flex-col items-center 
       transition-transform duration-300 hover:scale-105 overflow-hidden">
-
-      {/* Si hay un video, lo mostramos y la imagen no aparece */}
       {videoSrc ? (
         <video 
           autoPlay 
@@ -28,7 +27,6 @@ export function Card({ title, description, imageSrc, imageAlt, footerText, video
           <source src={videoSrc} type="video/mp4" />
         </video>
       ) : (
-        /* Si NO hay video, usamos Suspense para la imagen */
         <div className="flex justify-center mt-3 relative z-10">
           <Suspense fallback={<div className="w-[180px] h-[100px] bg-gray-700 animate-pulse rounded-lg"></div>}>
             <Image src={imageSrc} alt={imageAlt} width={180} height={100} className="rounded-lg" />
@@ -36,11 +34,13 @@ export function Card({ title, description, imageSrc, imageAlt, footerText, video
         </div>
       )}
 
-      {/* Contenido */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-transparent"></div>
-      <h3 className="text-lg font-semibold text-white relative z-10">{title}</h3>
-      <p className="text-gray-300 text-sm relative z-10">{description}</p>
-      <p className="text-gray-400 text-xs mt-2 relative z-10">{footerText}</p>
+      <div className="relative z-10 flex flex-col items-center gap-2">
+        {icon}
+        <h3 className="text-lg font-semibold text-white">{title}</h3>
+        <p className="text-gray-300 text-sm">{description}</p>
+        <p className="text-gray-400 text-xs mt-2">{footerText}</p>
+      </div>
     </div>
   );
 }

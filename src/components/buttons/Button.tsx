@@ -1,5 +1,5 @@
 "use client";
-import { MouseEventHandler, useState } from "react";
+import { MouseEventHandler, ReactNode, useState } from "react";
 
 interface ButtonProps {
   text: string;
@@ -8,15 +8,17 @@ interface ButtonProps {
   hoverColor?: string;
   textColor?: string;
   hoverTextColor?: string;
+  icon?: ReactNode;
 }
 
 export default function Button({
   text,
-  onClick = ()=>{console.log('hola')},
+  onClick = () => console.log("hola"),
   originalColor = "#fff",
   hoverColor = "#244256",
   textColor = "#244256",
   hoverTextColor = "#fff",
+  icon,
 }: ButtonProps) {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -29,8 +31,9 @@ export default function Button({
         backgroundColor: isHovered ? hoverColor : originalColor,
         color: isHovered ? hoverTextColor : textColor,
       }}
-      className="px-4 py-2 rounded-lg transition-colors duration-300"
+      className="px-4 py-2 rounded-lg transition-colors duration-300 flex items-center gap-2"
     >
+      {icon && <span>{icon}</span>}
       {text}
     </button>
   );

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { FaReact, FaNodeJs } from 'react-icons/fa';
+import { FaReact, FaNodeJs, FaLinkedin } from 'react-icons/fa';
 import { SiNextdotjs, SiMongodb } from 'react-icons/si';
 import SectionTiles from './titles/SectionTiles';
 import Button from './buttons/Button';
@@ -7,7 +7,7 @@ import Button from './buttons/Button';
 export default function AboutMeSection() {
   return (
     <section className="w-full flex flex-col items-center mt-16 py-10 text-white ">
-      <SectionTiles text='About Me' imageSrc='/iconos/escudo.png'/>
+      <SectionTiles text='About Me' imageSrc='/iconos/escudo.png' />
       
       <div className="backdrop-blur-lg rounded-2xl p-10 shadow-2xl max-w-4xl w-full flex flex-col items-center text-center">
         
@@ -37,15 +37,17 @@ export default function AboutMeSection() {
             <span className="mt-2 text-sm text-gray-300">Node.js</span>
           </div>
           <div className="flex flex-col items-center transition-transform duration-300 hover:scale-110">
-            <SiNextdotjs className="text-white text-5xl drop-shadow-lg" /> {/* Ícono de Next.js */}
+            <SiNextdotjs className="text-white text-5xl drop-shadow-lg" /> 
             <span className="mt-2 text-sm text-gray-300">Next.js</span>
           </div>
           <div className="flex flex-col items-center transition-transform duration-300 hover:scale-110">
-            <SiMongodb className="text-green-500 text-5xl drop-shadow-lg" /> {/* Ícono de MongoDB */}
+            <SiMongodb className="text-green-500 text-5xl drop-shadow-lg" /> 
             <span className="mt-2 text-sm text-gray-300">MongoDB</span>
           </div>
         </div>
-        <Button text="Linkedin"/>
+
+        {/* Botón con ícono de LinkedIn */}
+        <Button text="LinkedIn" icon={<FaLinkedin className="text-xl" />} />
       </div>
     </section>
   );

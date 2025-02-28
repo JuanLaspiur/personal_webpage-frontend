@@ -18,7 +18,7 @@ const extras = [
 function TechnologiesSection() {
   return (
     <section className="w-full max-w-5xl mx-auto my-16 p-10 bg-[#244256] text-white rounded-3xl relative">
-      <SectionTiles color='text-cyan-300' text='Technologies' imageSrc='/logo_fondo-blanco.png'/>
+      <SectionTiles color='text-cyan-300' text='Technologies' imageSrc='/iconos/codigo.png'/>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-3 pt-4 gap-6">
         {skills.map(({ category, items, icon: Icon }, index) => (
           <div 

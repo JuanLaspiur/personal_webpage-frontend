@@ -10,9 +10,9 @@ export default function Header() {
 
   return (
     <header className="w-full flex justify-between items-center px-8 py-4  relative z-[99]">
-      <div className="flex items-center gap-2">
-        <Image src="/logo_sin-fondo.png" alt="Juan Laspiur Logo" width={70} height={70} />
-        <h1 className="text-lg font-semibold">Juan Laspiur</h1>
+      <div className="flex items-center">
+        <Image src="/logo_sin-fondo.png" alt="Juan Laspiur Logo" width={50} height={50} />
+        <Image src="/logo-removebg-preview.png" alt="Juan Laspiur Logo" width={120} height={120} />
       </div>
       <nav className="hidden md:flex gap-6 z-[100]" >
         <Link href="/" className="text-gray-400 hover:text-white">

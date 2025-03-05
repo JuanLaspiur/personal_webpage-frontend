@@ -14,7 +14,7 @@ export default function Header() {
         <Image src="/logo_sin-fondo.png" alt="Juan Laspiur Logo" width={70} height={70} />
         <h1 className="text-lg font-semibold">Juan Laspiur</h1>
       </div>
-      <nav className="hidden md:flex gap-6">
+      <nav className="hidden md:flex gap-6 z-[100]" >
         <Link href="/" className="text-gray-400 hover:text-white">
           Platform
         </Link>

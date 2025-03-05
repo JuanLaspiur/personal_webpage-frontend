@@ -3,10 +3,13 @@ import { FaReact, FaNodeJs, FaLinkedin } from 'react-icons/fa';
 import { SiNextdotjs, SiMongodb } from 'react-icons/si';
 import SectionTiles from './titles/SectionTiles';
 import Button from './buttons/Button';
+import Background from './Background';
 
 export default function AboutMeSection() {
   return (
-    <section className="w-full flex flex-col items-center mt-16 py-10 text-white ">
+    <section className="w-full flex flex-col items-center mt-16 py-10 text-white relative">
+            <Background gradientToTop={false} imageSrc="/onda.gif" imageAlt="Fondo geometrico 4k"/>
+<div className='z-[99]'>
       <SectionTiles text='About Me' imageSrc='/iconos/escudo.png' />
       
       <div className="backdrop-blur-lg rounded-2xl p-10 shadow-2xl max-w-4xl w-full flex flex-col items-center text-center">
@@ -48,7 +51,7 @@ export default function AboutMeSection() {
 
         {/* Botón con ícono de LinkedIn */}
         <Button text="LinkedIn" icon={<FaLinkedin className="text-xl" />} />
-      </div>
+      </div></div>
     </section>
   );
 }

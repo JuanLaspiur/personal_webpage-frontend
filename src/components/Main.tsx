@@ -1,19 +1,12 @@
 import { FaRocket } from "react-icons/fa";
 import Button from "./buttons/Button";
 import MainTitles from "./titles/MainTitles";
-import Image from "next/image";
+import Background from "./Background";
 
 export default function Main() {
   return (
-    <div>  <Image
-    src="/universo.jpg"
-    alt="Universe Background"
-    layout="fill"
-    objectFit="cover"
-   quality={100} 
-  />  
-   <div className="absolute inset-0 bg-black opacity-70 z-[1]"></div>
-     <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent  z-[1]"></div>
+    <div>  
+      <Background/>
     <main className="text-center max-w-2xl my-10 mb-16 pb-10 relative z-[99]">
       
       <MainTitles topText="Radically better" bottomText="observability stack" />

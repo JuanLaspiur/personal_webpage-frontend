@@ -2,6 +2,7 @@ import { Card } from "./cards/Card";
 import SectionTiles from "./titles/SectionTiles";
 import { FaUsers, FaGlobe, FaListAlt, FaPenFancy, FaNetworkWired } from "react-icons/fa";
 import ScrollToTopButton from "./buttons/ScrollToTopButton"; // Importar el componente
+import Background from "./Background";
 
 const projects = [
   {
@@ -54,6 +55,8 @@ const projects = [
 export default function Section({ projectsData = projects }) {
   return (
     <section className="w-full flex flex-col items-center mt-20 py-6 pt-12 relative">
+         <Background gradientToTop={false} imageSrc="/montaña.gif" imageAlt="Fondo geometrico 4k"/>
+         <div className="z-[99]">
       <SectionTiles text="Uptime Monitoring" imageSrc="/iconos/espada.png" />
       <div className="mt-6 rounded-2xl py-6 shadow-lg w-full mx-auto">
         <div className="flex flex-wrap justify-center gap-4 w-full mx-auto">
@@ -63,7 +66,7 @@ export default function Section({ projectsData = projects }) {
         </div>
       </div>
 
-      <ScrollToTopButton />
+      <ScrollToTopButton /></div>
     </section>
   );
 }

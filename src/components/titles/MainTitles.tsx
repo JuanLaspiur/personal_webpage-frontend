@@ -10,7 +10,8 @@ const MainTitles: React.FC<MainTitlesProps> = ({ topText, bottomText }) => {
   return (
     <>
       <div className="flex items-center justify-center gap-2">
-            <Image src="/logo_sin-fondo.png" alt="Juan Laspiur Logo" width={110} height={110} />
+        {/* Es un gif quiero que se meuva una vez despues quede statico */}
+            <Image src="/logo_sin-fondo.gif" alt="Juan Laspiur Logo" width={110} height={110} />
           </div>
       <span className="bg-gradient-to-r from-[#173F3F] to-[#fff] bg-clip-text text-transparent text-4xl md:text-6xl font-bold leading-tight">
         {topText}

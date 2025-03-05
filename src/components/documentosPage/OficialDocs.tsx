@@ -3,11 +3,11 @@ import MainTitles from '../titles/MainTitles';
 
 function OficialDocs() {
   return (
-    <div className="min-h-screen w-full flex flex-col items-center justify-center bg-black text-white absolute left-0 ">
+    <div className="min-h-screen w-full flex flex-col items-center justify-center z-[9999] text-white absolute left-0 ">
       <div className="text-center max-w-2xl my-10">
         <MainTitles topText="Documents" bottomText="observability stack" />
 
-        <div className="mt-8 text-left text-gray-400">
+        <div className="mt-8 text-left text-gray-400 ">
           <h2 className="text-xl font-bold text-white">📌 Official Documentation</h2>
           <ul className="list-inside mt-2">
             <li>

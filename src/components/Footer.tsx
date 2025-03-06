@@ -4,9 +4,11 @@ import { FaInstagram, FaLinkedin, FaGithub, FaYoutube, FaPhoneAlt, FaEnvelope } 
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white px-[100px] py-4">
-    <div className="flex items-center  gap-1">
+    <div className="flex items-center  gap-2">
         <Image src="/logo_sin-fondo.gif" alt="Juan Laspiur Logo" width={50} height={50} />
-        <Image src="/logo-removebg-preview.png" alt="Juan Laspiur Logo" width={140} height={140} />
+        <span className="bg-gradient-to-r from-[#fff] to-[#4F4F4F] bg-clip-text text-transparent text-xl font-bold leading-tight">
+          Juan Laspiur
+      </span>
       </div>
 
       <div className="w-full flex flex-col lg:flex-row justify-between items-center mt-4">

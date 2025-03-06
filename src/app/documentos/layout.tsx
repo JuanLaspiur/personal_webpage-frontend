@@ -6,7 +6,7 @@ const SidebarLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="flex min-h-[120vh]">
       <Sidebar/>
-      <Background  gradientToTop={false}/>
+      <Background imageSrc="/soldier_documents.gif" />
       <main>{children}</main>
     </div>
   );

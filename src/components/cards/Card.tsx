@@ -13,7 +13,7 @@ interface CardProps {
 
 export function Card({ title, description, imageSrc, imageAlt, footerText, videoSrc = '/proyecto.mp4', icon }: CardProps) {
   return (
-    <div className="relative bg-black/30 backdrop-blur-xl min-h-[300px] w-[230px] p-6 rounded-2xl border border-white/20 
+    <div className="relative bg-black/10 backdrop-blur-xl min-h-[300px] w-[230px] p-6 rounded-2xl border border-white/20 
       max-w-[250px] sm:max-w-xs md:max-w-md text-center flex flex-col items-center 
       transition-transform duration-300 hover:scale-105 overflow-hidden">
       {videoSrc ? (

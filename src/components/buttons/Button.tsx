@@ -1,9 +1,9 @@
 "use client";
-import { MouseEventHandler, ReactNode, useState } from "react";
+import {  ReactNode, useState } from "react";
 
 interface ButtonProps {
   text: string;
-  onClick?: MouseEventHandler<HTMLButtonElement>;
+  onClick?: ()=>void;
   originalColor?: string;
   hoverColor?: string;
   textColor?: string;

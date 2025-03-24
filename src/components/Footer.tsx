@@ -21,7 +21,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center gap-6">
           <div className="flex items-center gap-2 text-gray-400">
             <FaPhoneAlt  />
-            <p>+1 (201) 500-2007</p>
+            <p>+54 (291) 404-5485</p>
           </div>
 
           <div className="flex items-center gap-2 text-gray-400">

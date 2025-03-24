@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
 import { FaGlobe } from "react-icons/fa"; // Importar el icono de mundo
 import Button from "./buttons/Button";
 
@@ -17,6 +17,7 @@ export default function Header() {
           Juan Laspiur
       </span>
       </div>
+      {/** 
       <nav className="hidden md:flex gap-6 z-[100]">
         <Link href="/" className="text-gray-400 hover:text-white">
           Platform
@@ -30,7 +31,7 @@ export default function Header() {
         <Link href="#" className="text-gray-400 hover:text-white">
           Community
         </Link>
-      </nav>
+      </nav>*/}
       <Button
         text="EN"
         onClick={handleSignUp}

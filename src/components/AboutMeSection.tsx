@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image';
 import { FaReact, FaNodeJs, FaLinkedin } from 'react-icons/fa';
 import { SiNextdotjs, SiMongodb } from 'react-icons/si';
@@ -50,7 +51,7 @@ export default function AboutMeSection() {
         </div>
 
         {/* Botón con ícono de LinkedIn */}
-        <Button text="LinkedIn" icon={<FaLinkedin className="text-xl" />} />
+        <Button text="LinkedIn" icon={<FaLinkedin className="text-xl" />}   onClick={() => window.open('https://www.linkedin.com/in/laspiurperezjuan/', '_blank')} />
       </div></div>
     </section>
   );

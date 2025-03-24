@@ -8,8 +8,10 @@ export default function Main() {
     <div>  
       <Background/>
     <main className="text-center max-w-2xl my-10 mb-16 pb-10 relative z-[99]">
-      
-      <MainTitles topText="Radically better" bottomText="observability stack" />
+    <MainTitles topText="Crafting Code" bottomText="for seamless UX" />
+
+
+
       <div className="mt-6 flex flex-col md:flex-row gap-2 justify-center z-[99]">
         <input
           type="email"

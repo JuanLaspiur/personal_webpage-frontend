@@ -1,4 +1,4 @@
-// @ts-expect-error
+// @ts-expect-error: Ignoring type mismatch due to dynamic import handling
 import { Suspense } from "react";
 import Image from "next/image";
 

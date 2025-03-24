@@ -1,5 +1,7 @@
 import Image from "next/image";
-import { FaInstagram, FaLinkedin, FaGithub, FaYoutube, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import SocialFooter from "./cards/SocialFooter";
+
 
 export default function Footer() {
   return (
@@ -29,13 +31,8 @@ export default function Footer() {
             <p>laspiurperezjuan@gmail.com</p>
           </div>
         </div>
-
-        <div className="flex gap-4 mt-4 lg:mt-0">
-          <FaInstagram className="text-gray-400 hover:text-white text-xl cursor-pointer" />
-          <FaLinkedin className="text-gray-400 hover:text-white text-xl cursor-pointer" />
-          <FaGithub className="text-gray-400 hover:text-white text-xl cursor-pointer" />
-          <FaYoutube className="text-gray-400 hover:text-white text-xl cursor-pointer" />
-        </div>
+           <SocialFooter/>
+  
       </div>
     </footer>
   );

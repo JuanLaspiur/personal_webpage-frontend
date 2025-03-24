@@ -1,6 +1,6 @@
-// @ts-expect-error: Ignoring type mismatch due to dynamic import handling
 import { Suspense } from "react";
 import Image from "next/image";
+import { JSX } from "react/jsx-runtime";
 
 interface CardProps {
   title: string;
@@ -9,7 +9,7 @@ interface CardProps {
   imageAlt: string;
   footerText: string;
   videoSrc?: string;
-  icon?: JSX.Element;
+  icon?:  JSX.Element;
 }
 
 export function Card({ title, description, imageSrc, imageAlt, footerText, videoSrc = '/proyecto.mp4', icon }: CardProps) {

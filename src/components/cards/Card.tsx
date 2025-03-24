@@ -1,3 +1,4 @@
+// @ts-expect-error
 import { Suspense } from "react";
 import Image from "next/image";
 

@@ -25,7 +25,7 @@ function Page() {
             
             {/* Descripción */}
             <p className="mt-6 text-lg max-w-lg leading-relaxed text-gray-300">
-              Hi, I'm <span className="font-semibold text-cyan-300">Juan Laspiur</span>, a passionate software developer specializing in front-end and back-end technologies. I love building high-performance applications using modern tools like React, React Native, Node.js, and Next.js.
+              Hi, Im <span className="font-semibold text-cyan-300">Juan Laspiur</span>, a passionate software developer specializing in front-end and back-end technologies. I love building high-performance applications using modern tools like React, React Native, Node.js, and Next.js.
             </p>
     
             {/* Tech Stack con animaciones */}

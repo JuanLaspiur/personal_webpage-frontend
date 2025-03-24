@@ -16,10 +16,9 @@ export default function Footer() {
       <div className="w-full flex flex-col lg:flex-row justify-between items-center mt-4">
         <div className="max-w-md">
           <p className="text-gray-400">
-            Better Stack lets you see inside any stack, debug any issue, and resolve any incident.
+          Discover my programming portfolio, where I showcase my skills and projects that turn ideas into digital realities.
           </p>
         </div>
-
         <div className="flex flex-col md:flex-row items-center gap-6">
           <div className="flex items-center gap-2 text-gray-400">
             <FaPhoneAlt  />

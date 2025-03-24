@@ -15,7 +15,7 @@ const WhatsAppButton: React.FC = () => {
   }, []);
 
   const openWhatsApp = () => {
-    window.open("https://wa.me/", "_blank"); // Reemplaza con tu número de WhatsApp
+    window.open("https://wa.me/542914045485", "_blank"); 
   };
 
   return (
